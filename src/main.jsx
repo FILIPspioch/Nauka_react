@@ -3,8 +3,8 @@ import ReactDOM from "react-dom/client";
 const data = new Date();
 const godzina = data.getHours();
 
-const Funkcja = (hr) => <h1>{hr}</h1>;
+const Funkcja = () => <h1>{godzina}</h1>;
 
-const element = <>{Funkcja(godzina)}</>;
+const element = <Funkcja></Funkcja>;
 
 ReactDOM.createRoot(document.getElementById("root")).render(element);
